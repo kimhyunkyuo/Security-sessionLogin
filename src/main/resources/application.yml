@@ -1,0 +1,30 @@
+server:
+  port: 8081
+
+# mysql 연결정보
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test_db?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: hyunkyukim
+    password: 1234
+
+# spring data jpa 설정
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+     ddl-auto: create
+
+
+     
+     # org.hibernate.dialect.OracleDialect 오라클 데이터베이스플랫폼 주소
+
+       # database 연동 정보
+       #spring:
+       #  datasource:
+       #  driver-class-name: oracle.jdbc.driver.OracleDriver
+       # url: jdbc:oracle:thin:@localhost:1521:XE
+       #  username: c##hyunkyu
+      #password: 1234
