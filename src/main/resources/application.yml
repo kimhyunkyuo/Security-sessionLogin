@@ -17,6 +17,17 @@ spring:
     hibernate:
      ddl-auto: create
 
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 993245576031-8ta1opmm47nn2fa045sb23r5c4h0vgdn.apps.googleusercontent.com
+            client-secret: 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'
+          #  redirect-uri: http://localhost:8081/login/oauth2/code/google
+            scope:
+              - email
+              - profile
 
      
      # org.hibernate.dialect.OracleDialect 오라클 데이터베이스플랫폼 주소
