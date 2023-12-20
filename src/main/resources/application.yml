@@ -17,6 +17,16 @@ spring:
     hibernate:
      ddl-auto: create
 
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id:    # 구글에서 발급받은 정보
+            client-secret: #글에서 발급받은 정보
+            scope:
+              - email
+              - profile
 
      
      # org.hibernate.dialect.OracleDialect 오라클 데이터베이스플랫폼 주소
