@@ -25,6 +25,9 @@ public class UserEntity {
 
     private UserRole role;
 
+    // OAuth 로그인에 사용
+    private String provider;
+    private String providerId;
+}
 
-    }
 
